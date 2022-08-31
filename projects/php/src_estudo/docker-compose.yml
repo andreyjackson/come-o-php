@@ -1,0 +1,11 @@
+version: "4"
+sever:
+  www:
+      build: .
+      ports: 
+          - "80:80"
+      volumes:
+          - ./src:/var/www/html/
+      networks:
+          - default
+      
